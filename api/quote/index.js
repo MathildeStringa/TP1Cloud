@@ -29,8 +29,8 @@ module.exports = async function (context, req) {
   context.log('JavaScript HTTP trigger function processed a request.');
 
   const image = await getImage();
-  const text = quotes[Math.floor(Math.random() * quotes.length)];
-
+  //const text = quotes[Math.floor(Math.random() * quotes.length)];
+const text = "Vas-y louche";
   context.res = {
     body: {
       image,
